@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .counter {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+
+  button {
+    background-color: #2196f3;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin: 8px;
+  }
+
+  input {
+    border: none;
+    border-bottom: 2px solid #2196f3;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 8px;
+    padding: 8px;
+    text-align: center;
+    width: 200px;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #1976d2;
+  }
+
+  input::placeholder {
+    color: #bdbdbd;
+    /* font-style: italic; */
+  }
+
+  /* Media queries for mobile screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  input {
+    font-size: 14px;
+    width: 150px;
+  }
+}
+
+/* Media queries for tablet screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .counter {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  input {
+    font-size: 16px;
+    width: 180px;
+  }
+}
