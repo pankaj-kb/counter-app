@@ -3,16 +3,21 @@ import "./App.css";
 
 function Counter() {
   const [count, setCount] = useState(0);
-  const [inLimit, setInLimit] = useState("");
-  const [deLimit, setDeLimit] = useState("");
+  const [inLimit, setInLimit] = useState(0);
+  const [deLimit, setDeLimit] = useState(0);
 
   const handleInLimit = (e) => {
-    setInLimit(inLimit > deLimit ? e.target.value : 0);
-  };
+    setInLimit(e.target.value > deLimit ? e.target.value : 0);
+  };  
 
   const handleDeLimit = (e) => {
-    setDeLimit(deLimit < inLimit ? e.target.value : -1);
+    const newDeLimit = e.target.value < inLimit ? e.target.value : 0;
+    setDeLimit(newDeLimit);
+    if (newDeLimit > count) {
+      setCount(0);
+    }
   };
+  
 
   const handleIncrease = (e) => {
     setCount(count < inLimit ? count + 1 : count);
