@@ -2,7 +2,7 @@
 ### This is a simple counter app created with React and Vanilla CSS. The app allows the user to increment or decrement the count value.
 
 ## Live Demo
-### [You can access a live demo of the app here]( https://coolreactcounter.netlify.app/)
+### [![Live Preview](https://img.shields.io/badge/live%20preview-embed-blue?style=flat-square)](https://coolreactcounter.netlify.app)
 
 ## How to Use
 
